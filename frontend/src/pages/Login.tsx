@@ -32,8 +32,9 @@ const Login: React.FC = () => {
                 )}
                 <form onSubmit={handleLogin} className="space-y-5">
                     <div>
-                        <label className="block text-sm font-medium text-neutral-400 mb-1">Company Username</label>
+                        <label htmlFor="username" className="block text-sm font-medium text-neutral-400 mb-1">Company Username</label>
                         <input
+                            id="username"
                             type="text"
                             className="w-full px-4 py-3 bg-black/50 border border-white/5 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-white placeholder-neutral-600"
                             value={username}
@@ -42,8 +43,9 @@ const Login: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-neutral-400 mb-1">Password</label>
+                        <label htmlFor="password" className="block text-sm font-medium text-neutral-400 mb-1">Password</label>
                         <input
+                            id="password"
                             type="password"
                             className="w-full px-4 py-3 bg-black/50 border border-white/5 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-white"
                             value={password}
